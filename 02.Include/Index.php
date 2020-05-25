@@ -33,22 +33,21 @@ if (!empty($_POST)) {
 }
 
 
+echo "Email = " . $email;
+echo "Password = " . $pass;
 
+require_once "DataBase.php";
+require_once "views/header.html";
+require_once "views/main.html";
+require_once "views/footer.html";
 
-// echo "Email = " . $email;
-// echo "Password = " . $pass;
-
-//require_once "views/header.html";
-//require_once "views/main.html";
-//require_once "views/footer.html";
-
-$i = 0;
-do {
-    $randomNumber = rand(0, 100);
-    $i++;
-    // if ($i == 6) {
-    //     break;
-    // }
-    echo $randomNumber . " ";
-} while ($randomNumber != 6);
-echo "I = " . $i;
+// $i = 0;
+// do {
+//     $randomNumber = rand(0, 100);
+//     $i++;
+//     // if ($i == 6) {
+//     //     break;
+//     // }
+//     echo $randomNumber . " ";
+// } while ($randomNumber != 6);
+// echo "I = " . $i;
